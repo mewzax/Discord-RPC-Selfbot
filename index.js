@@ -21,9 +21,4 @@ presences.forEach(file => {
 const event = require(`./presences/${file}`);
 });
 
-const status = fs.readdirSync('./status/');
-status.forEach(file => {
-const event = require(`./status/${file}`);
-});
-
 client.login(process.env.TOKEN);

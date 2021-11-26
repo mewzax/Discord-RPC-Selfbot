@@ -1,60 +1,61 @@
 {
-    "mode": "spotify",
-    "status": "dnd",
+    "mode": "",
+    "status": "",
 
-    "useCustomStatus": true,
-    "customStatusMode": "normal",
+    "settings": { 
 
-    "normalStatus": {
-        "emoji": ":thumbsup:",
-        "text": "lol"
-    },
+        "game": {
 
-    "successiveStatuses":{
-        "status1": ["emoji", "text"],
-        "status2": ["emoji", "text"],
-        "status3": ["emoji", "text"],
-        "status4": ["emoji", "text"],
-        "status5": ["emoji", "text"]
-    },
+            "applicationid": "",
+            "name": "",
+            "details": "",
+            "state": "",
 
+            "largeimage": "",
+            "largeimagetext" : "",
 
-    "spotify" : {
-        "applicationid": "908421914534494250",
-        "details": "i like hentais",
-        "state": "slow noxis",
+            "smallimage": "",
+            "smallimagetext" : "",
 
-        "largespotifyimage" : "spotify:ab67706c0000bebb34f7d903fe1b2d921364b799",
-        "largespotifyimagetext" : "spotify:ab67706c0000bebb34f7d903fe1b2d921364b799",
+            "startTimestamp" : "",
+            "endTimestamp" : ""
 
-        "smallspotifyimage" : "spotify:ab67706c0000bebb34f7d903fe1b2d921364b799",
-        "smallspotifyimagetext" : "cool",
+        },
 
-        "startTimestamp" : "",
-        "endTimestamp" : ""
-    },
+        "spotify": {
 
-    "twitch" : {
-        "applicationid": "",
-        "name": "",
-        "url": "",
-        "details": "",
-        "state": ""
-    },
+            "applicationID": "",
+            "details": "",
+            "state": "",
 
-    "game": {
-        "applicationid": "",
-        "name": "",
-        "details": "",
-        "state": "",
+            "largeimage" : "",
+            "largeimagetext" : "",
 
-        "largeimage": "",
-        "largeimagetext" : "",
+            "smallimage" : "",
+            "smallimagetext" : "",
 
-        "smallimage": "",
-        "smallimagetext" : "",
+            "startTimestamp" : "",
+            "endTimestamp" : ""
 
-        "startTimestamp" : "",
-        "endTimestamp" : ""
+        },
+
+        "twitch": {
+                
+            "applicationID": "",
+            "details": "",
+            "state": "",
+            "link": "",
+    
+            "largeimage" : "",
+            "largeimagetext" : "",
+    
+            "smallimage" : "",
+            "smallimagetext" : "",
+    
+            "startTimestamp" : "",
+            "endTimestamp" : ""
+
+        }
+  
     }
-    }
+}
