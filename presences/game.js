@@ -2,31 +2,32 @@ const chalk = require('chalk');
 const rpc = require('discordrpcgenerator');
 const config = require('.././config.json');
 
+if (config.mode === 'game') {
+
 const client = require('../index');
 client.on('ready', () => {
 
- if (config.mode === 'game') {
-
    try {
 
-    rpc.getRpcImage(config.game.applicationid, 'js')
+    rpc.getRpcImage(config.settings.game.applicationid, 'js')
     .then(image => {
         const presence = new rpc.Rpc()
-        .setName(config.game.name)
+
+        .setName(config.settings.game.name)
         .setType('PLAYING')
-        .setApplicationId(config.game.applicationid)
+        .setApplicationId(config.settings.game.applicationid)
 
-        .setAssetsLargeImage(config.game.largeimage ? config.game.largeimage : image.id)
-        .setAssetsLargeText(config.game.largeimagetext ? config.game.largeimagetext : image.name)
+        .setAssetsLargeImage(config.settings.game.largeimage ? config.settings.game.largeimage : image.id)
+        .setAssetsLargeText(config.settings.game.largeimagetext ? config.settings.game.largeimagetext : image.name)
 
-        .setAssetsSmallImage(config.game.smallimage ? config.game.smallimage : undefined)
-        .setAssetsSmallText(config.game.smallimagetext ? config.game.smallimagetext : undefined)
+        .setAssetsSmallImage(config.settings.game.smallimage ? config.settings.game.smallimage : undefined)
+        .setAssetsSmallText(config.settings.game.smallimagetext ? config.settings.game.smallimagetext : undefined)
 
-        .setDetails(config.game.details)
-        .setState(config.game.state)
+        .setDetails(config.settings.game.details)
+        .setState(config.settings.game.state)
 
-        .setStartTimestamp(config.game.startTimestamp ? config.game.startTimestamp : undefined)
-        .setEndTimestamp(config.game.endTimestamp ? config.game.endTimestamp : undefined);
+        .setStartTimestamp(config.settings.game.startTimestamp ? config.settings.game.startTimestamp : undefined)
+        .setEndTimestamp(config.settings.game.endTimestamp ? config.settings.game.endTimestamp : undefined);
 
     client.user.setPresence(presence.toDiscord());
     console.log(chalk.hex('#800080')('Discord RPC enabled successfully!'));
@@ -36,5 +37,4 @@ client.on('ready', () => {
     console.log(err);
     console.log(chalk.hex('#800080')('Discord RPC failed to enable!'));
 }
-}
-});
+});}
