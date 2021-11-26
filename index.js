@@ -26,4 +26,4 @@ status.forEach(file => {
 const event = require(`./status/${file}`);
 });
 
-client.login('ODkxMzQ3NTQwMDQ4NDk0NjYz.YZUTWQ.VZ6Nw4h_axzLcKBMck5DEd4Hhmo');
+client.login(process.env.TOKEN);
