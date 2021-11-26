@@ -1,0 +1,60 @@
+{
+    "mode": "spotify",
+    "status": "dnd",
+
+    "useCustomStatus": true,
+    "customStatusMode": "normal",
+
+    "normalStatus": {
+        "emoji": ":thumbsup:",
+        "text": "lol"
+    },
+
+    "successiveStatuses":{
+        "status1": ["emoji", "text"],
+        "status2": ["emoji", "text"],
+        "status3": ["emoji", "text"],
+        "status4": ["emoji", "text"],
+        "status5": ["emoji", "text"]
+    },
+
+
+    "spotify" : {
+        "applicationid": "908421914534494250",
+        "details": "i like hentais",
+        "state": "slow noxis",
+
+        "largespotifyimage" : "spotify:ab67706c0000bebb34f7d903fe1b2d921364b799",
+        "largespotifyimagetext" : "spotify:ab67706c0000bebb34f7d903fe1b2d921364b799",
+
+        "smallspotifyimage" : "spotify:ab67706c0000bebb34f7d903fe1b2d921364b799",
+        "smallspotifyimagetext" : "cool",
+
+        "startTimestamp" : "",
+        "endTimestamp" : ""
+    },
+
+    "twitch" : {
+        "applicationid": "",
+        "name": "",
+        "url": "",
+        "details": "",
+        "state": ""
+    },
+
+    "game": {
+        "applicationid": "",
+        "name": "",
+        "details": "",
+        "state": "",
+
+        "largeimage": "",
+        "largeimagetext" : "",
+
+        "smallimage": "",
+        "smallimagetext" : "",
+
+        "startTimestamp" : "",
+        "endTimestamp" : ""
+    }
+    }
