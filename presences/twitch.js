@@ -10,7 +10,7 @@ client.on('ready', () => {
 
    try {
 
-    rpc.getRpcImage(config.settings.twitch.applicationid, 'js')
+    rpc.getRpcImage(config.settings.twitch.applicationid, config.settings.twitch.largeimage)
     .then(image => {
         const presence = new rpc.Rpc()
         .setName(config.settings.twitch.name)
@@ -21,8 +21,8 @@ client.on('ready', () => {
         .setAssetsLargeImage(config.settings.twitch.largeimage ? config.settings.twitch.largeimage : image.id)
         .setAssetsLargeText(config.settings.twitch.largeimagetext ? config.settings.twitch.largeimagetext : image.name)
 
-        .setDetails(config.settings.twitch.details)
-        .setState(config.settings.twitch.state)
+        .setDetails(config.settings.twitch.details ? config.settings.twitch.details : undefined)
+        .setState(config.settings.twitch.state ? config.settings.twitch.state : undefined)
 
         .setStartTimestamp(config.settings.spotify.startTimestamp ? config.settings.spotify.startTimestamp : undefined)
         .setEndTimestamp(config.settings.spotify.endTimestamp ? config.settings.spotiify.endTimestamp : undefined)

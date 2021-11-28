@@ -10,13 +10,13 @@ client.on('ready', () => {
   try {
     const presence = rpc.createSpotifyRpc(client)
 
-    .setDetails(config.settings.spotify.details)
-    .setState(config.settings.spotify.state)
+    .setDetails(config.settings.spotify.details ? config.settings.spotify.details : undefined)
+    .setState(config.settings.spotify.state ? config.settings.spotify.state : undefined)
 
     .setAssetsLargeImage(config.settings.spotify.largeimage)
     .setAssetsLargeText(config.settings.spotify.largeimagetext ? config.settings.spotify.largeimagetext : undefined)
 
-    .setAssetsSmallImage(config.settings.spotify.smallimage)
+    .setAssetsSmallImage(config.settings.spotify.smallimage ? config.settings.spotify.largeimagetext : undefined)
     .setAssetsSmallText(config.settings.spotify.smallimagetext ? config.settings.spotify.smallimagetext : undefined)
 
     .setStartTimestamp(config.settings.spotify.startTimestamp ? config.settings.spotify.startTimestamp : undefined)

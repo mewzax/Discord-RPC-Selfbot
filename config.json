@@ -1,17 +1,17 @@
 {
-    "mode": "",
-    "status": "",
+    "mode": "game",
+    "status": "dnd",
 
     "settings": { 
 
         "game": {
 
-            "applicationid": "",
-            "name": "",
-            "details": "",
-            "state": "",
+            "applicationid": "914564055174381588",
+            "name": "l",
+            "details": "l",
+            "state": "l",
 
-            "largeimage": "",
+            "largeimage": "js",
             "largeimagetext" : "",
 
             "smallimage": "",
