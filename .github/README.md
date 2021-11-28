@@ -45,4 +45,6 @@
 <br />
 
 ### Disclaimer
+```
 Using a selfbot is against TOS and can get your account banned. Use it at your own risks.
+```
