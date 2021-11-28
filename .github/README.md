@@ -48,8 +48,9 @@
 - **How to import spotify images ?**
 - A: [How to use Spotify API](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Spotify-API)
 
-- **How to run 24/7 ?**
+<br />
 
+- **How to run 24/7 ?**
 - A: [Keep Alive your app](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Keep-Alive)
 
 ### Disclaimer
