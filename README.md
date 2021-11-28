@@ -27,12 +27,12 @@
 
 ### FAQ
 - **Q: Where can I find the installation steps?**
-- A: [Installation](https://github.com/slow/nitro-sniper/wiki/Installation)
+- A: [Installation](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Installation)
 
 <br />
 
-- **Q: Where can I find the default configuration?**
-- A: [Default Configuration](https://github.com/slow/nitro-sniper/wiki/Default-Configuration)
+- **Q: Where can I find the Usage?**
+- A: [Default Configuration](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Usage)
 
 <br />
 
