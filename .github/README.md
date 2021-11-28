@@ -45,6 +45,9 @@
 
 <br />
 
+- How to run 24/7 ?
+-- A: [RUN24H](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Keep-Alive)
+
 ### Disclaimer
 ```
 Using a selfbot is against TOS and can get your account banned. Use it at your own risks.
