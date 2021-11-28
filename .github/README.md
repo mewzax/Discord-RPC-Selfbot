@@ -27,7 +27,7 @@
 - Spotify RPC
 - Game RPC
 - Twitch RPC
-- Custom Status: online or dnd
+- Custom Status: online, dnd, idle
 
 ### FAQ
 - **Q: Where can I find the installation steps?**
