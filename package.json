@@ -17,5 +17,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slowwdev/Discord-Selfbot-RPC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slowwdev/Discord-Selfbot-RPC/issues"
+  },
+  "homepage": "https://github.com/slowwdev/Discord-Selfbot-RPC#readme",
   "description": ""
 }
