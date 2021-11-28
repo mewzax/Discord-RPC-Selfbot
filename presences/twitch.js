@@ -10,7 +10,7 @@ client.on('ready', () => {
 
    try {
 
-    rpc.getRpcImage(config.settings.twitch.applicationid, 'js')
+    rpc.getRpcImage(config.settings.twitch.applicationid, config.settings.twitch.largeimage)
     .then(image => {
         const presence = new rpc.Rpc()
         .setName(config.settings.twitch.name)
