@@ -9,7 +9,7 @@ client.on('ready', () => {
 
    try {
 
-    rpc.getRpcImage(config.settings.game.applicationid, 'js')
+    rpc.getRpcImage(config.settings.game.applicationid, config.settings.game.largeimage)
     .then(image => {
         const presence = new rpc.Rpc()
 
