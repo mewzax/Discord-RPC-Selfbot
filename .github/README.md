@@ -46,7 +46,7 @@
 <br />
 
 - **How to run 24/7 ?**
-- A: [RUN24H](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Keep-Alive)
+- A: [Keep ALive your app](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Keep-Alive)
 
 ### Disclaimer
 ```
