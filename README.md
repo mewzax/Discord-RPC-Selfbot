@@ -7,9 +7,11 @@
  
   <br>
   <b>The most efficient Discord RPC you'll ever find.</b><br>
-  Made with ❤ by <b><a href="https://github.com/tenclea">Tenclea</a></b>
+  Made with ❤ by <b><a href="https://github.com/slowwdev">Slow</a></b>
   <br>
   If you liked this project, please consider <b>starring</b> it <3
 </p>
 
- 🌹 The Perfect Discord RPC | Features: Spotify Status, Twitch Status, Game Status FULL CUSTOMIZABLE | Better than other RPC because don't need to have Discord running in background / Free Hosting on replit.com 24h/7
+ # Why Discord-Selfbot-RPC is better than other Discord RPC ?
+ 
+ because it don't need to have Discord running in background / Free Hosting on replit.com 24h/7
