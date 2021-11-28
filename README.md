@@ -40,3 +40,6 @@
 - A: [How to obtain your token](https://www.youtube.com/watch?v=rawcwqFJCCE)
 
 <br />
+
+### Disclaimer
+Using a selfbot is against TOS and can get your account banned. Use it at your own risks.
