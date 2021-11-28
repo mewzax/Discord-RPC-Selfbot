@@ -11,7 +11,7 @@
   <br>
   If you liked this project, please consider <b>starring</b> it <3
 </p>
-<h1 align="center">Still in beta: [Report Bugs](https://github.com/slowwdev/Discord-Selfbot-RPC/issues)</h1>
+<h1 align="center">Still in beta: (Report Bugs)[https://github.com/slowwdev/Discord-Selfbot-RPC/issues]</h1>
 ---
 
  ### Why Discord-Selfbot-RPC is better than other Discord RPC ?
