@@ -18,6 +18,9 @@
 
  because it don't need to have Discord running in background / Free Hosting on replit.com 24h/7 and have more features
 
+### Preview
+![Screenshot](screenshot.png)
+
 ### Features:
 
 - Spotify RPC
@@ -32,7 +35,7 @@
 <br />
 
 - **Q: Where can I find the Usage?**
-- A: [Default Configuration](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Usage)
+- A: [Usage](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Usage)
 
 <br />
 
