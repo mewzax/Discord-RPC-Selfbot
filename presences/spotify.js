@@ -16,7 +16,7 @@ client.on('ready', () => {
     .setAssetsLargeImage(config.settings.spotify.largeimage)
     .setAssetsLargeText(config.settings.spotify.largeimagetext ? config.settings.spotify.largeimagetext : undefined)
 
-    .setAssetsSmallImage(config.settings.spotify.smallimage ? config.settings.spotify.largeimagetext : undefined)
+    .setAssetsSmallImage(config.settings.spotify.smallimage ? config.settings.spotify.smallimage : undefined)
     .setAssetsSmallText(config.settings.spotify.smallimagetext ? config.settings.spotify.smallimagetext : undefined)
 
     .setStartTimestamp(config.settings.spotify.startTimestamp ? config.settings.spotify.startTimestamp : undefined)
