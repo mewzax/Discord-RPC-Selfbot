@@ -1,3 +1,13 @@
+const config = require('./config');
+
+if (!config.mode) {
+    throw new Error('No mode specified');
+  }
+
+if (!process.env.TOKEN) {
+    throw new Error('No token specified, please set TOKEN environment variable');
+}
+
 const express = require('express');
 const app = express();
 
@@ -12,6 +22,7 @@ app.listen(3000, () => {
 const discord = require('discord.js-selfbot-v11');
 const fs = require('fs');
 const { dir } = require('console');
+const { isFunction } = require('util');
 
 const client = new discord.Client();
 module.exports = client;
