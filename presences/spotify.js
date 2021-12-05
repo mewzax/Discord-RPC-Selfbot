@@ -13,11 +13,11 @@ client.on('ready', () => {
     .setDetails(config.settings.spotify.details ? config.settings.spotify.details : undefined)
     .setState(config.settings.spotify.state ? config.settings.spotify.state : undefined)
 
-    .setAssetsLargeImage(config.settings.spotify.largeimage)
-    .setAssetsLargeText(config.settings.spotify.largeimagetext ? config.settings.spotify.largeimagetext : undefined)
+    .setAssetsLargeImageKey(config.settings.spotify.LargeImageKey)
+    .setAssetsLargeText(config.settings.spotify.LargeImageText ? config.settings.spotify.LargeImageText : undefined)
 
-    .setAssetsSmallImage(config.settings.spotify.smallimage ? config.settings.spotify.smallimage : undefined)
-    .setAssetsSmallText(config.settings.spotify.smallimagetext ? config.settings.spotify.smallimagetext : undefined)
+    .setAssetsSmallImageKey(config.settings.spotify.SmallImageKey ? config.settings.spotify.SmallImageKey : undefined)
+    .setAssetsSmallText(config.settings.spotify.SmallImageText ? config.settings.spotify.SmallImageText : undefined)
 
     .setStartTimestamp(config.settings.spotify.startTimestamp ? config.settings.spotify.startTimestamp : undefined)
     .setEndTimestamp(config.settings.spotify.endTimestamp ? config.settings.spotify.endTimestamp : undefined);
