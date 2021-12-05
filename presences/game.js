@@ -9,7 +9,7 @@ client.on('ready', () => {
 
    try {
 
-    rpc.getRpcImage(config.settings.game.applicationid, config.settings.game.largeimage)
+    rpc.getRpcImage(config.settings.game.applicationid, config.settings.game.largeImageKey)
     .then(image => {
         const presence = new rpc.Rpc()
 
@@ -17,8 +17,8 @@ client.on('ready', () => {
         .setType('PLAYING')
         .setApplicationId(config.settings.game.applicationid)
 
-        .setAssetsLargeImage(config.settings.game.largeimage ? config.settings.game.largeimage : image.id)
-        .setAssetsLargeText(config.settings.game.largeimagetext ? config.settings.game.largeimagetext : image.name)
+        .setAssetslargeImage(config.settings.game.largeImageKey ? config.settings.game.largeImageKey : image.id)
+        .setAssetsLargeText(config.settings.game.largeImageText ? config.settings.game.largeImageText : image.name)
 
         .setAssetsSmallImage(config.settings.game.smallimage ? config.settings.game.smallimage : undefined)
         .setAssetsSmallText(config.settings.game.smallimagetext ? config.settings.game.smallimagetext : undefined)

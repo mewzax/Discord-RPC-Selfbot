@@ -13,8 +13,8 @@ client.on('ready', () => {
     .setDetails(config.settings.spotify.details ? config.settings.spotify.details : undefined)
     .setState(config.settings.spotify.state ? config.settings.spotify.state : undefined)
 
-    .setAssetsLargeImage(config.settings.spotify.largeimage)
-    .setAssetsLargeText(config.settings.spotify.largeimagetext ? config.settings.spotify.largeimagetext : undefined)
+    .setAssetslargeImage(config.settings.spotify.largeImageKey)
+    .setAssetsLargeText(config.settings.spotify.largeImageText ? config.settings.spotify.largeImageText : undefined)
 
     .setAssetsSmallImage(config.settings.spotify.smallimage ? config.settings.spotify.smallimage : undefined)
     .setAssetsSmallText(config.settings.spotify.smallimagetext ? config.settings.spotify.smallimagetext : undefined)
