@@ -10,7 +10,11 @@ client.on('ready', () => {
 
    try {
 
+<<<<<<< Updated upstream
     rpc.getRpcImage(config.settings.twitch.applicationID, config.settings.twitch.LargeImageKey)
+=======
+    rpc.getRpcImage(config.settings.twitch.applicationid, config.settings.twitch.largeImage)
+>>>>>>> Stashed changes
     .then(image => {
         const presence = new rpc.Rpc()
         .setName(config.settings.twitch.name)
@@ -18,8 +22,13 @@ client.on('ready', () => {
         .setType('STREAMING')
         .setapplicationID(config.settings.twitch.applicationID)
 
+<<<<<<< Updated upstream
         .setAssetsLargeImageKey(config.settings.twitch.LargeImageKey ? config.settings.twitch.LargeImageKey : image.id)
         .setAssetsLargeText(config.settings.twitch.LargeImageText ? config.settings.twitch.LargeImageText : image.name)
+=======
+        .setAssetslargeImage(config.settings.twitch.largeImage ? config.settings.twitch.largeImage : image.id)
+        .setAssetsLargeText(config.settings.twitch.largeImagetext ? config.settings.twitch.largeImagetext : image.name)
+>>>>>>> Stashed changes
 
         .setDetails(config.settings.twitch.details ? config.settings.twitch.details : undefined)
         .setState(config.settings.twitch.state ? config.settings.twitch.state : undefined)

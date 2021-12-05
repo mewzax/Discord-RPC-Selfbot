@@ -10,7 +10,11 @@ client.on('ready', () => {
 
    try {
 
+<<<<<<< Updated upstream
     rpc.getRpcImage(config.settings.game.applicationID, config.settings.game.LargeImageKey)
+=======
+    rpc.getRpcImage(config.settings.game.applicationid, config.settings.game.largeImage)
+>>>>>>> Stashed changes
     .then(image => {
         const presence = new rpc.Rpc()
 
@@ -18,11 +22,19 @@ client.on('ready', () => {
         .setType('PLAYING')
         .setapplicationID(config.settings.game.applicationID)
 
+<<<<<<< Updated upstream
         .setAssetsLargeImageKey(config.settings.game.LargeImageKey ? config.settings.game.LargeImageKey : image.id)
         .setAssetsLargeText(config.settings.game.LargeImageText ? config.settings.game.LargeImageText : image.name)
 
         .setAssetsSmallImageKey(config.settings.game.SmallImageKey ? config.settings.game.SmallImageKey : undefined)
         .setAssetsSmallText(config.settings.game.SmallImageText ? config.settings.game.SmallImageText : undefined)
+=======
+        .setAssetslargeImage(config.settings.game.largeImage ? config.settings.game.largeImage : image.id)
+        .setAssetsLargeText(config.settings.game.largeImagetext ? config.settings.game.largeImagetext : image.name)
+
+        .setAssetssmallImage(config.settings.game.smallImage ? config.settings.game.smallImage : undefined)
+        .setAssetsSmallText(config.settings.game.smallImagetext ? config.settings.game.smallImagetext : undefined)
+>>>>>>> Stashed changes
 
         .setDetails(config.settings.game.details ? config.settings.game.details : undefined)
         .setState(config.settings.game.state ? config.settings.game.state : undefined)
