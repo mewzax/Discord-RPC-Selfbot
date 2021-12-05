@@ -38,4 +38,5 @@ client.on('ready', () => {
     console.log(err);
     console.log(chalk.hex('#800080')('Discord RPC failed to enable!'));
 }
-});}
+})
+;}

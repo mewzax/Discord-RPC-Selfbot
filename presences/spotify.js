@@ -31,4 +31,6 @@ client.on('ready', () => {
   console.log(chalk.hex('#800080')('Spotify RPC failed to enable!'));
 }
 }
-);}
+)
+;
+}
