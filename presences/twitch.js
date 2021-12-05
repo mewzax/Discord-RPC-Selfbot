@@ -40,4 +40,5 @@ client.on('ready', () => {
     console.log(chalk.hex('#800080')('Twitch RPC failed to enable!'));
 }
 }
-);}
+);
+}
