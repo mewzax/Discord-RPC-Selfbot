@@ -6,16 +6,16 @@
 
         "game": {
 
-            "applicationid": "",
+            "applicationID": "",
             "name": "",
             "details": "",
             "state": "",
 
-            "largeimage": "",
-            "largeimagetext" : "",
+            "LargeImageKey": "",
+            "LargeImageText" : "",
 
-            "smallimage": "",
-            "smallimagetext" : "",
+            "SmallImageKey": "",
+            "SmallImageText" : "",
 
             "startTimestamp" : "",
             "endTimestamp" : ""
@@ -27,11 +27,11 @@
             "details": "",
             "state": "",
 
-            "largeimage" : "",
-            "largeimagetext" : "",
+            "LargeImageKey" : "",
+            "LargeImageText" : "",
 
-            "smallimage" : "",
-            "smallimagetext" : "",
+            "SmallImageKey" : "",
+            "SmallImageText" : "",
 
             "startTimestamp" : "",
             "endTimestamp" : ""
@@ -46,11 +46,11 @@
             "state": "",
             "link": "",
     
-            "largeimage" : "",
-            "largeimagetext" : "",
+            "LargeImageKey" : "",
+            "LargeImageText" : "",
     
-            "smallimage" : "",
-            "smallimagetext" : "",
+            "SmallImageKey" : "",
+            "SmallImageText" : "",
     
             "startTimestamp" : "",
             "endTimestamp" : ""

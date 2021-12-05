@@ -10,16 +10,16 @@ client.on('ready', () => {
 
    try {
 
-    rpc.getRpcImage(config.settings.twitch.applicationid, config.settings.twitch.largeimage)
+    rpc.getRpcImage(config.settings.twitch.applicationID, config.settings.twitch.LargeImageKey)
     .then(image => {
         const presence = new rpc.Rpc()
         .setName(config.settings.twitch.name)
         .setUrl(config.settings.twitch.url)
         .setType('STREAMING')
-        .setApplicationId(config.settings.twitch.applicationid)
+        .setapplicationID(config.settings.twitch.applicationID)
 
-        .setAssetsLargeImage(config.settings.twitch.largeimage ? config.settings.twitch.largeimage : image.id)
-        .setAssetsLargeText(config.settings.twitch.largeimagetext ? config.settings.twitch.largeimagetext : image.name)
+        .setAssetsLargeImageKey(config.settings.twitch.LargeImageKey ? config.settings.twitch.LargeImageKey : image.id)
+        .setAssetsLargeText(config.settings.twitch.LargeImageText ? config.settings.twitch.LargeImageText : image.name)
 
         .setDetails(config.settings.twitch.details ? config.settings.twitch.details : undefined)
         .setState(config.settings.twitch.state ? config.settings.twitch.state : undefined)

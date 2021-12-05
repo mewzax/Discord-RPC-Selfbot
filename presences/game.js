@@ -10,19 +10,19 @@ client.on('ready', () => {
 
    try {
 
-    rpc.getRpcImage(config.settings.game.applicationid, config.settings.game.largeimage)
+    rpc.getRpcImage(config.settings.game.applicationID, config.settings.game.LargeImageKey)
     .then(image => {
         const presence = new rpc.Rpc()
 
         .setName(config.settings.game.name)
         .setType('PLAYING')
-        .setApplicationId(config.settings.game.applicationid)
+        .setapplicationID(config.settings.game.applicationID)
 
-        .setAssetsLargeImage(config.settings.game.largeimage ? config.settings.game.largeimage : image.id)
-        .setAssetsLargeText(config.settings.game.largeimagetext ? config.settings.game.largeimagetext : image.name)
+        .setAssetsLargeImageKey(config.settings.game.LargeImageKey ? config.settings.game.LargeImageKey : image.id)
+        .setAssetsLargeText(config.settings.game.LargeImageText ? config.settings.game.LargeImageText : image.name)
 
-        .setAssetsSmallImage(config.settings.game.smallimage ? config.settings.game.smallimage : undefined)
-        .setAssetsSmallText(config.settings.game.smallimagetext ? config.settings.game.smallimagetext : undefined)
+        .setAssetsSmallImageKey(config.settings.game.SmallImageKey ? config.settings.game.SmallImageKey : undefined)
+        .setAssetsSmallText(config.settings.game.SmallImageText ? config.settings.game.SmallImageText : undefined)
 
         .setDetails(config.settings.game.details ? config.settings.game.details : undefined)
         .setState(config.settings.game.state ? config.settings.game.state : undefined)
