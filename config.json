@@ -6,16 +6,24 @@
 
         "game": {
 
-            "applicationid": "",
+            "applicationID": "",
             "name": "",
             "details": "",
             "state": "",
 
-            "largeimage": "",
-            "largeimagetext" : "",
+<<<<<<< Updated upstream
+            "LargeImageKey": "",
+            "LargeImageText" : "",
 
-            "smallimage": "",
-            "smallimagetext" : "",
+            "SmallImageKey": "",
+            "SmallImageText" : "",
+=======
+            "largeImage": "",
+            "largeImagetext" : "",
+
+            "smallImage": "",
+            "smallImagetext" : "",
+>>>>>>> Stashed changes
 
             "startTimestamp" : "",
             "endTimestamp" : ""
@@ -27,11 +35,19 @@
             "details": "",
             "state": "",
 
-            "largeimage" : "",
-            "largeimagetext" : "",
+<<<<<<< Updated upstream
+            "LargeImageKey" : "",
+            "LargeImageText" : "",
 
-            "smallimage" : "",
-            "smallimagetext" : "",
+            "SmallImageKey" : "",
+            "SmallImageText" : "",
+=======
+            "largeImage" : "",
+            "largeImagetext" : "",
+
+            "smallImage" : "",
+            "smallImagetext" : "",
+>>>>>>> Stashed changes
 
             "startTimestamp" : "",
             "endTimestamp" : ""
@@ -46,11 +62,19 @@
             "state": "",
             "link": "",
     
-            "largeimage" : "",
-            "largeimagetext" : "",
+<<<<<<< Updated upstream
+            "LargeImageKey" : "",
+            "LargeImageText" : "",
     
-            "smallimage" : "",
-            "smallimagetext" : "",
+            "SmallImageKey" : "",
+            "SmallImageText" : "",
+=======
+            "largeImage" : "",
+            "largeImagetext" : "",
+    
+            "smallImage" : "",
+            "smallImagetext" : "",
+>>>>>>> Stashed changes
     
             "startTimestamp" : "",
             "endTimestamp" : ""
