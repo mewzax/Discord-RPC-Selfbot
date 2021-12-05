@@ -11,19 +11,11 @@
             "details": "",
             "state": "",
 
-<<<<<<< Updated upstream
-            "LargeImageKey": "",
-            "LargeImageText" : "",
+            "largeImageKey": "",
+            "largeImageText" : "",
 
-            "SmallImageKey": "",
-            "SmallImageText" : "",
-=======
-            "largeImage": "",
-            "largeImagetext" : "",
-
-            "smallImage": "",
-            "smallImagetext" : "",
->>>>>>> Stashed changes
+            "smallImageKey": "",
+            "smallImageText" : "",
 
             "startTimestamp" : "",
             "endTimestamp" : ""
@@ -35,19 +27,11 @@
             "details": "",
             "state": "",
 
-<<<<<<< Updated upstream
-            "LargeImageKey" : "",
-            "LargeImageText" : "",
+            "largeImageKey" : "",
+            "largeImageText" : "",
 
-            "SmallImageKey" : "",
-            "SmallImageText" : "",
-=======
-            "largeImage" : "",
-            "largeImagetext" : "",
-
-            "smallImage" : "",
-            "smallImagetext" : "",
->>>>>>> Stashed changes
+            "smallImageKey" : "",
+            "smallImageText" : "",
 
             "startTimestamp" : "",
             "endTimestamp" : ""
@@ -62,19 +46,11 @@
             "state": "",
             "link": "",
     
-<<<<<<< Updated upstream
-            "LargeImageKey" : "",
-            "LargeImageText" : "",
+            "largeImageKey" : "",
+            "largeImageText" : "",
     
-            "SmallImageKey" : "",
-            "SmallImageText" : "",
-=======
-            "largeImage" : "",
-            "largeImagetext" : "",
-    
-            "smallImage" : "",
-            "smallImagetext" : "",
->>>>>>> Stashed changes
+            "smallImageKey" : "",
+            "smallImageText" : "",
     
             "startTimestamp" : "",
             "endTimestamp" : ""
