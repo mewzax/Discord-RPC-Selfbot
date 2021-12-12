@@ -2,60 +2,53 @@
     "mode": "",
     "status": "",
 
-    "settings": { 
+    "settings": {
 
-        "game": {
+      "game": {
+        "applicationID": "",
+        "name": "",
+        "details": "",
+        "state": "",
 
-            "applicationID": "",
-            "name": "",
-            "details": "",
-            "state": "",
+        "largeImageKey": "",
+        "largeImageText": "",
 
-            "largeImageKey": "",
-            "largeImageText" : "",
+        "smallImageKey": "",
+        "smallImageText": "",
+        "startTimestamp": "",
+        
+        "endTimestamp": ""
+      },
 
-            "smallImageKey": "",
-            "smallImageText" : "",
+      "spotify": {
+        "details": "",
+        "state": "",
 
-            "startTimestamp" : "",
-            "endTimestamp" : ""
+        "largeImageKey": "",
+        "largeImageText": "",
 
-        },
+        "smallImageKey": "",
+        "smallImageText": "",
 
-        "spotify": {
-            
-            "details": "",
-            "state": "",
+        "startTimestamp": "",
+        "endTimestamp": ""
+      },
 
-            "largeImageKey" : "",
-            "largeImageText" : "",
+      "twitch": {
+        "applicationID": "",
+        "name": "",
+        "details": "",
+        "state": "",
+        "link": "",
 
-            "smallImageKey" : "",
-            "smallImageText" : "",
+        "largeImageKey": "",
+        "largeImageText": "",
 
-            "startTimestamp" : "",
-            "endTimestamp" : ""
+        "smallImageKey": "",
+        "smallImageText": "",
 
-        },
-
-        "twitch": {
-                
-            "applicationID": "",
-            "name": "",
-            "details": "",
-            "state": "",
-            "link": "",
-    
-            "largeImageKey" : "",
-            "largeImageText" : "",
-    
-            "smallImageKey" : "",
-            "smallImageText" : "",
-    
-            "startTimestamp" : "",
-            "endTimestamp" : ""
-
-        }
-  
+        "startTimestamp": "",
+        "endTimestamp": ""
+      }
     }
-}
+  }
