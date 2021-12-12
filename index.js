@@ -1,5 +1,6 @@
 const config = require('./config');
 
+// Checking configuration
 if (!config.mode) {
     throw new Error('No mode specified');
   }
@@ -8,6 +9,7 @@ if (!process.env.TOKEN) {
     throw new Error('No token specified, please set TOKEN environment variable');
 }
 
+// Starting bot
 const express = require('express');
 const app = express();
 
@@ -24,6 +26,7 @@ const fs = require('fs');
 const { dir } = require('console');
 const { isFunction } = require('util');
 
+// Initializing presences
 const client = new discord.Client();
 module.exports = client;
 
@@ -32,4 +35,5 @@ presences.forEach(file => {
 const event = require(`./presences/${file}`);
 });
 
+// Connection with Token in environment variables
 client.login(process.env.TOKEN);
