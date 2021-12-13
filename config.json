@@ -1,54 +1,54 @@
 {
-    "mode": "",
-    "status": "",
+  "mode": "",
+  "status": "",
 
-    "settings": {
+  "settings": {
 
-      "game": {
-        "applicationID": "",
-        "name": "",
-        "details": "",
-        "state": "",
+    "game": {
+      "applicationID": "",
+      "name": "",
+      "details": "",
+      "state": "",
 
-        "largeImageKey": "",
-        "largeImageText": "",
+      "largeImageKey": "",
+      "largeImageText": "",
 
-        "smallImageKey": "",
-        "smallImageText": "",
-        "startTimestamp": "",
-        
-        "endTimestamp": ""
-      },
+      "smallImageKey": "",
+      "smallImageText": "",
+      "startTimestamp": "",
 
-      "spotify": {
-        "details": "",
-        "state": "",
+      "endTimestamp": ""
+    },
 
-        "largeImageKey": "",
-        "largeImageText": "",
+    "spotify": {
+      "details": "",
+      "state": "",
 
-        "smallImageKey": "",
-        "smallImageText": "",
+      "largeImageKey": "",
+      "largeImageText": "",
 
-        "startTimestamp": "",
-        "endTimestamp": ""
-      },
+      "smallImageKey": "",
+      "smallImageText": "",
 
-      "twitch": {
-        "applicationID": "",
-        "name": "",
-        "details": "",
-        "state": "",
-        "link": "",
+      "startTimestamp": "",
+      "endTimestamp": ""
+    },
 
-        "largeImageKey": "",
-        "largeImageText": "",
+    "twitch": {
+      "applicationID": "",
+      "name": "",
+      "details": "",
+      "state": "",
+      "link": "",
 
-        "smallImageKey": "",
-        "smallImageText": "",
+      "largeImageKey": "",
+      "largeImageText": "",
 
-        "startTimestamp": "",
-        "endTimestamp": ""
-      }
+      "smallImageKey": "",
+      "smallImageText": "",
+
+      "startTimestamp": "",
+      "endTimestamp": ""
     }
   }
+}
