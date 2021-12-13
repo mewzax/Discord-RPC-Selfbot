@@ -29,6 +29,10 @@
 - Twitch RPC
 - Custom Status: online, dnd, idle
 
+### Requirements
+- [NodeJS](https://nodejs.org/en/download/)
+- [Discord Developer Application](https://discord.com/developers/applications)
+
 ### FAQ
 - **Q: Where can I find the installation steps?**
 - A: [Installation](https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Installation)
