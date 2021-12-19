@@ -13,13 +13,13 @@ if (config.mode === 'twitch') {
 
     try {
 
-      rpc.getRpcImage(config.settings.twitch.applicationid, config.settings.twitch.largeImageKey)
+      rpc.getRpcImage(config.settings.twitch.applicationID, config.settings.twitch.largeImageKey)
         .then(image => {
           const presence = new rpc.Rpc()
             .setName(config.settings.twitch.name)
             .setUrl(config.settings.twitch.url)
             .setType('STREAMING')
-            .setApplicationId(config.settings.twitch.applicationid)
+            .setApplicationId(config.settings.twitch.applicationID)
 
             .setAssetslargeImage(config.settings.twitch.largeImageKey ? config.settings.twitch.largeImageKey : image.id)
             .setAssetsLargeText(config.settings.twitch.largeImageText ? config.settings.twitch.largeImageText : image.name)

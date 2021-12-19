@@ -12,7 +12,7 @@ if (config.mode === 'game') {
 
     try {
 
-      rpc.getRpcImage(config.settings.game.applicationid, config.settings.game.largeImageKey)
+      rpc.getRpcImage(config.settings.game.applicationID, config.settings.game.largeImageKey)
         .then(image => {
           const presence = new rpc.Rpc()
 
