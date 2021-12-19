@@ -15,20 +15,15 @@ if (config.mode === 'game') {
       rpc.getRpcImage(config.settings.game.applicationID, config.settings.game.largeImageKey)
         .then(image => {
           const presence = new rpc.Rpc()
-
             .setName(config.settings.game.name)
             .setType('PLAYING')
             .setApplicationId(config.settings.game.applicationID)
-
             .setAssetslargeImage(config.settings.game.largeImageKey ? config.settings.game.largeImageKey : image.id)
             .setAssetsLargeText(config.settings.game.largeImageText ? config.settings.game.largeImageText : image.name)
-
             .setAssetsSmallImage(config.settings.game.smallimage ? config.settings.game.smallimage : undefined)
             .setAssetsSmallText(config.settings.game.smallimagetext ? config.settings.game.smallimagetext : undefined)
-
             .setDetails(config.settings.game.details ? config.settings.game.details : undefined)
             .setState(config.settings.game.state ? config.settings.game.state : undefined)
-
             .setStartTimestamp(config.settings.game.startTimestamp ? config.settings.game.startTimestamp : undefined)
             .setEndTimestamp(config.settings.game.endTimestamp ? config.settings.game.endTimestamp : undefined);
 

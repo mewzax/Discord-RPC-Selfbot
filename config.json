@@ -37,16 +37,8 @@
     "twitch": {
       "applicationID": "",
       "name": "",
-      "details": "",
       "state": "",
       "link": "",
-
-      "largeImageKey": "",
-      "largeImageText": "",
-
-      "smallImageKey": "",
-      "smallImageText": "",
-
       "startTimestamp": "",
       "endTimestamp": ""
     }
