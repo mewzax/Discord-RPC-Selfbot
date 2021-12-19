@@ -1,0 +1,54 @@
+{
+  "name": "snekfetch",
+  "version": "3.6.4",
+  "main": "index.js",
+  "module": "esm.mjs",
+  "unpkg": "browser.js",
+  "jsdelivr": "browser.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "node ./node_modules/.bin/jest",
+    "test:coveralls": "cat ./coverage/lcov.info | coveralls",
+    "docs": "node docs.js",
+    "build:browser": "webpack",
+    "prepublishOnly": "npm run build:browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsnek/snekfetch.git"
+  },
+  "author": "Gus Caplan <me@gus.host>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devsnek/snekfetch/issues"
+  },
+  "homepage": "https://snekfetch.js.org/",
+  "dependencies": {},
+  "devDependencies": {
+    "@snek/syncify": "0.0.6",
+    "coveralls": "^3.0.0",
+    "docma": "^1.5.1",
+    "eslint": "^4.8.0",
+    "jest": "^21.2.1",
+    "jsdoc-dynamic": "^1.0.4",
+    "json-filter-loader": "^1.0.0",
+    "node-fetch": "github:bitinn/node-fetch",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.8.1"
+  },
+  "description": "Just do http requests without all that weird nastiness from other libs",
+  "browser": {
+    "./src/node/index.js": false,
+    "./src/meta.js": false
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/qs_mock.js",
+      "!src/node/mimeOfBuffer.js",
+      "!src/node/transports/http2.js"
+    ],
+    "verbose": true
+  }
+}

@@ -16,43 +16,33 @@ if (config.mode === 'twitch') {
       rpc.getRpcImage(config.settings.twitch.applicationID, config.settings.twitch.largeImageKey)
         .then(image => {
           const presence = new rpc.Rpc()
-            .setName(config.settings.twitch.name)
-            .setUrl(config.settings.twitch.url)
+            .setUrl(config.settings.twitch.link)
             .setType('STREAMING')
             .setApplicationId(config.settings.twitch.applicationID)
-
-            .setAssetslargeImage(config.settings.twitch.largeImageKey ? config.settings.twitch.largeImageKey : image.id)
-            .setAssetsLargeText(config.settings.twitch.largeImageText ? config.settings.twitch.largeImageText : image.name)
-
-            .setDetails(config.settings.twitch.details ? config.settings.twitch.details : undefined)
+            .setAssetsLargeImage(image.id)
+            .setDetails(config.settings.twitch.name ? config.settings.twitch.name : undefined)
             .setState(config.settings.twitch.state ? config.settings.twitch.state : undefined)
-
             .setStartTimestamp(config.settings.spotify.startTimestamp ? config.settings.spotify.startTimestamp : undefined)
             .setEndTimestamp(config.settings.spotify.endTimestamp ? config.settings.spotiify.endTimestamp : undefined)
 
-            .setParty({
-              size: [1, 4],
-              id: uuid()
-            });
-
           // Set the presence
-          client.user.setPresence(presence.toDiscord());
+          client.user.setPresence(presence.toDiscord());;
+        })
+      // Set the status
+      if (config.status === 'online' || config.status === 'idle' || config.status === 'dnd') {
+        client.user.setStatus(config.status);
+      }
 
-          // Set the status
-          if (config.status === 'online' || config.status === 'idle' || config.status === 'dnd') {
-            client.user.setStatus(config.status);
-          }
+      if (config.status === 'offline' || config.status === 'invisible') {
+        console.log('Status cant be set to' + config.status + '\nPlease change the status in the config.json file');
+        process.exit(1);
+      }
 
-          if (config.status === 'offline' || config.status === 'invisible') {
-            console.log('Status cant be set to' + config.status + '\nPlease change the status in the config.json file');
-            process.exit(1);
-          }
+      // Done!
+      console.log(chalk.hex('#800080')('Twitch RPC enabled successfully!'));
+      console.log(chalk.hex('#800080')('Twitch: ' + config.settings.twitch.name));
+      console.log(chalk.hex('#800080')('Status: ' + config.status));
 
-          // Done!
-          console.log(chalk.hex('#800080')('Twitch RPC enabled successfully!'));
-          console.log(chalk.hex('#800080')('Twitch: ' + config.settings.twitch.name));
-          console.log(chalk.hex('#800080')('Status: ' + config.status ? config.status : 'status not defined'));
-        });
     } catch (err) {
       console.log(err);
       console.log(chalk.hex('#800080')('Twitch RPC failed to enable!'));
