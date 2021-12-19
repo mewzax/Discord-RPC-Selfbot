@@ -18,7 +18,7 @@ if (config.mode === 'game') {
 
             .setName(config.settings.game.name)
             .setType('PLAYING')
-            .setApplicationId(config.settings.game.applicationid)
+            .setApplicationId(config.settings.game.applicationID)
 
             .setAssetslargeImage(config.settings.game.largeImageKey ? config.settings.game.largeImageKey : image.id)
             .setAssetsLargeText(config.settings.game.largeImageText ? config.settings.game.largeImageText : image.name)
