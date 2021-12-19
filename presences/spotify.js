@@ -11,16 +11,13 @@ if (config.mode === 'spotify') {
 
     try {
       const presence = rpc.createSpotifyRpc(client)
-
+      
         .setDetails(config.settings.spotify.details ? config.settings.spotify.details : undefined)
         .setState(config.settings.spotify.state ? config.settings.spotify.state : undefined)
-
         .setAssetslargeImage(config.settings.spotify.largeImageKey)
         .setAssetsLargeText(config.settings.spotify.largeImageText ? config.settings.spotify.largeImageText : undefined)
-
         .setAssetsSmallImage(config.settings.spotify.smallimage ? config.settings.spotify.smallimage : undefined)
         .setAssetsSmallText(config.settings.spotify.smallimagetext ? config.settings.spotify.smallimagetext : undefined)
-
         .setStartTimestamp(config.settings.spotify.startTimestamp ? config.settings.spotify.startTimestamp : undefined)
         .setEndTimestamp(config.settings.spotify.endTimestamp ? config.settings.spotify.endTimestamp : undefined);
 
