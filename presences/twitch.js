@@ -22,9 +22,10 @@ if (config.mode === 'twitch') {
     // Done !
     console.log(chalk.hex('#800080')('Twitch RPC enabled successfully!'));
     console.log(chalk.hex('#800080')('Twitch: ' + config.settings.twitch.name));
-  })
+  
 
   } catch (err) {
     console.error(err);
   }
+  })
 }
