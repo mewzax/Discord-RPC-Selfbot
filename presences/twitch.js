@@ -4,6 +4,7 @@ const rpc = require('discordrpcgenerator');
 const config = require('.././config.json');
 
 if (config.mode === 'twitch') {
+  client.on("ready", () => {
   try {
     rpc.getRpcImage(config.settings.twitch.applicationID, config.settings.twitch.largeImageKey).then(image => {
       const presence = new rpc.Rpc()
@@ -21,6 +22,7 @@ if (config.mode === 'twitch') {
     // Done !
     console.log(chalk.hex('#800080')('Twitch RPC enabled successfully!'));
     console.log(chalk.hex('#800080')('Twitch: ' + config.settings.twitch.name));
+  })
 
   } catch (err) {
     console.error(err);
