@@ -1,46 +1,33 @@
-const config = require('../config.json');
 const client = require('..');
-
-const rpc = require('discordrpcgenerator');
 const chalk = require('chalk');
+const rpc = require('discordrpcgenerator');
+const config = require('.././config.json');
 
 if (config.mode === 'spotify') {
-  client.on('ready', () => {
-
-    try {
-
-      const presence = rpc.createSpotifyRpc()
-        .setDetails(config.settings.spotify.name)
+  try {
+      const presence = new rpc.createSpotifyRpc()
+        .setType('LISTENING')
         .setState(config.settings.spotify.details)
+        .setDetails(config.settings.spotify.name)
+        .setAssetsLargeImage(config.settings.largeImageKey)
+        .setAssetsLargeText(config.settings.spotify.largeImageText);
 
-        .setAssetsLargeImage(config.settings.spotify.largeImage)
-        .setAssetsLargeText(config.settings.spotify.largeImageText)
-
-        .setAssetsSmallImage(config.settings.spotify.smallImage ? config.settings.spotify.smallImage : undefined)
-        .setAssetsSmallText(config.settings.spotify.smallImageText ? config.settings.spotify.smallImageText : undefined)
-
-        .setStartTimestamp(config.settings.spotify.startTimestamp)
-        .setEndTimestamp(config.settings.spotify.endTimestamp);
-
-      // Set the presence
       client.user.setPresence(presence.toDiscord());
 
-      // Set the status
-      if (config.status === 'online' || config.status === 'idle' || config.status === 'dnd') {
-        client.user.setStatus(config.status);
-      }
-
-      if (config.status === 'offline' || config.status === 'invisible') {
-        console.log('Status cant be set to' + config.status + '\nPlease change the status in the config.json file');
-      }
-
-      // Done !
-      console.log(chalk.hex('#800080')('Spotify RPC enabled successfully!'));
-      console.log(chalk.hex('#800080')('Spotify: ' + config.settings.spotify.name));
-      console.log(chalk.hex('#800080')('Status: ' + config.status));
-
-    } catch (err) {
-      console.log(err);
+    // Set the status
+    if (config.status === 'online' || config.status === 'idle' || config.status === 'dnd') {
+      client.user.setStatus(config.status);
     }
-  });
+
+    if (config.status === 'offline' || config.status === 'invisible') {
+      console.log('Status cant be set to' + config.status + '\nPlease change the status in the config.json file');
+    }
+
+    // Done !
+    console.log(chalk.hex('#800080')('Spotify RPC enabled successfully!'));
+    console.log(chalk.hex('#800080')('Spotify: ' + config.settings.spotify.name));
+    console.log(chalk.hex('#800080')('Status: ' + config.status));
+  } catch (err) {
+    console.error(err);
+  }
 }
