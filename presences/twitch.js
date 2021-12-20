@@ -13,8 +13,8 @@ if (config.mode === 'twitch') {
         .setApplicationId(config.settings.twitch.applicationID)
         .setState(config.settings.twitch.state)
         .setDetails(config.settings.twitch.details)
-        .setAssetsLargeImage(image.settings.twitch.id)
-        .setAssetsLargeText(image.settings.twitch.name);
+        .setAssetsLargeImage(image.id)
+        .setAssetsLargeText(image.name);
       client.user.setPresence(presence.toDiscord());
     });
 
