@@ -5,7 +5,7 @@ const config = require('.././config.json');
 
 if (config.mode === 'game') {
   try {
-    rpc.getRpcImage(config.settings.game.applicationID, config.settings.largeImageKey).then(image => {
+    rpc.getRpcImage(config.settings.game.applicationID, config.settings.game.largeImageKey).then(image => {
       const presence = new rpc.Rpc()
         .setName(config.settings.game.name)
         .setType('PLAYING')
