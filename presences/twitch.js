@@ -5,7 +5,7 @@ const config = require('.././config.json');
 
 if (config.mode === 'twitch') {
   try {
-    rpc.getRpcImage(config.settings.twitch.applicationID, config.settings.largeImageKey).then(image => {
+    rpc.getRpcImage(config.settings.twitch.applicationID, config.settings.twitch.largeImageKey).then(image => {
       const presence = new rpc.Rpc()
         .setName(config.settings.twitch.name)
         .setType('STREAMING')
