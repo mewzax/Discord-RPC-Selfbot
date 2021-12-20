@@ -30,8 +30,9 @@ if (config.mode === 'game') {
     console.log(chalk.hex('#800080')('Game RPC enabled successfully!'));
     console.log(chalk.hex('#800080')('Game: ' + config.settings.game.name));
     console.log(chalk.hex('#800080')('Status: ' + config.status));
-  })
+  
   } catch (err) {
     console.error(err);
   }
+  })
 }
