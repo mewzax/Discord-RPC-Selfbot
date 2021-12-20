@@ -1,44 +1,39 @@
 {
-  "mode": "",
-  "status": "",
+  "mode": "twitch",
+  "status": "dnd",
 
   "settings": {
-
     "game": {
       "applicationID": "",
-      "name": "",
-      "details": "",
-      "state": "",
-
-      "largeImageKey": "",
-      "largeImageText": "",
-
+      "name": "lol",
+      "details": "lol",
+      "state": "lol",
+      "largeImageKey": "image",
+      "largeImageText": "lol",
       "smallImageKey": "",
       "smallImageText": "",
-
       "startTimestamp": "",
       "endTimestamp": ""
     },
-
     "spotify": {
-      "details": "",
-      "state": "",
-
-      "largeImageKey": "",
-      "largeImageText": "",
-
-      "smallImageKey": "",
-      "smallImageText": "",
-
+      "name": "Spotify",
+      "details": "Spotify",
+      "largeImage": "spotify:f2ed07272dec9cfc3b6805e9c59eac3391a59bed",
+      "largeImageText": "Spotify",
+      "smallImage": "spotify:f2ed07272dec9cfc3b6805e9c59eac3391a59bed",
+      "smallImageText": "Spotify",
       "startTimestamp": "",
       "endTimestamp": ""
     },
-
     "twitch": {
       "applicationID": "",
-      "name": "",
-      "state": "",
-      "link": "",
+      "name": "Twitch",
+      "details": "Twitch",
+      "url": "https://twitch.tv/lolftg",
+      "largeImageKey": "image",
+      "largeImageText": "Twitch",
+      "smallImageKey": "image",
+      "smallImageText": "Twitch",
       "startTimestamp": "",
       "endTimestamp": ""
     }
