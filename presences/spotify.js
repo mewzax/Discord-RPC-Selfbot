@@ -28,8 +28,9 @@ if (config.mode === 'spotify') {
     console.log(chalk.hex('#800080')('Spotify RPC enabled successfully!'));
     console.log(chalk.hex('#800080')('Spotify: ' + config.settings.spotify.name));
     console.log(chalk.hex('#800080')('Status: ' + config.status));
-  })
+  
   } catch (err) {
     console.error(err);
   }
+    })
 }
