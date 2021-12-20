@@ -1,25 +1,26 @@
-const chalk = require('chalk');
-const rpc = require('discordrpcgenerator');
+const config = require('../config.json');
+const client = require('..');
 
-const config = require('.././config.json');
+const rpc = require('discordrpcgenerator');
+const chalk = require('chalk');
 
 if (config.mode === 'spotify') {
-
-  // Create the RPC
-  const client = require('../index');
   client.on('ready', () => {
 
     try {
-      const presence = rpc.createSpotifyRpc(client)
-      
-        .setDetails(config.settings.spotify.details ? config.settings.spotify.details : undefined)
-        .setState(config.settings.spotify.state ? config.settings.spotify.state : undefined)
-        .setAssetslargeImage(config.settings.spotify.largeImageKey)
-        .setAssetsLargeText(config.settings.spotify.largeImageText ? config.settings.spotify.largeImageText : undefined)
-        .setAssetsSmallImage(config.settings.spotify.smallimage ? config.settings.spotify.smallimage : undefined)
-        .setAssetsSmallText(config.settings.spotify.smallimagetext ? config.settings.spotify.smallimagetext : undefined)
-        .setStartTimestamp(config.settings.spotify.startTimestamp ? config.settings.spotify.startTimestamp : undefined)
-        .setEndTimestamp(config.settings.spotify.endTimestamp ? config.settings.spotify.endTimestamp : undefined);
+
+      const presence = rpc.createSpotifyRpc()
+        .setDetails(config.settings.spotify.name)
+        .setState(config.settings.spotify.details)
+
+        .setAssetsLargeImage(config.settings.spotify.largeImage)
+        .setAssetsLargeText(config.settings.spotify.largeImageText)
+
+        .setAssetsSmallImage(config.settings.spotify.smallImage ? config.settings.spotify.smallImage : undefined)
+        .setAssetsSmallText(config.settings.spotify.smallImageText ? config.settings.spotify.smallImageText : undefined)
+
+        .setStartTimestamp(config.settings.spotify.startTimestamp)
+        .setEndTimestamp(config.settings.spotify.endTimestamp);
 
       // Set the presence
       client.user.setPresence(presence.toDiscord());
@@ -33,15 +34,13 @@ if (config.mode === 'spotify') {
         console.log('Status cant be set to' + config.status + '\nPlease change the status in the config.json file');
       }
 
-      // Done!
+      // Done !
       console.log(chalk.hex('#800080')('Spotify RPC enabled successfully!'));
-      console.log(chalk.hex('#800080')('Spotify: ' + config.settings.spotify.details));
-      console.log(chalk.hex('#800080')('Status: ' + config.status ? config.status : 'status not defined'));
-
+      console.log(chalk.hex('#800080')('Spotify: ' + config.settings.spotify.name));
+      console.log(chalk.hex('#800080')('Status: ' + config.status));
 
     } catch (err) {
       console.log(err);
-      console.log(chalk.hex('#800080')('Spotify RPC failed to enable!'));
     }
   });
 }

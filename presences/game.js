@@ -1,31 +1,31 @@
-const chalk = require('chalk');
-const rpc = require('discordrpcgenerator');
+const config = require('../config.json');
+const client = require('..');
 
-const config = require('.././config.json');
-const uuid = () => ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, a => (a ^ Math.random() * 16 >> a / 4).toString(16));
+const rpc = require('discordrpcgenerator');
+const chalk = require('chalk');
 
 if (config.mode === 'game') {
-
-  // Create the RPC
-  const client = require('../index');
   client.on('ready', () => {
 
     try {
-
       rpc.getRpcImage(config.settings.game.applicationID, config.settings.game.largeImageKey)
         .then(image => {
           const presence = new rpc.Rpc()
-            .setName(config.settings.game.name)
-            .setType('PLAYING')
             .setApplicationId(config.settings.game.applicationID)
-            .setAssetslargeImage(config.settings.game.largeImageKey ? config.settings.game.largeImageKey : image.id)
-            .setAssetsLargeText(config.settings.game.largeImageText ? config.settings.game.largeImageText : image.name)
-            .setAssetsSmallImage(config.settings.game.smallimage ? config.settings.game.smallimage : undefined)
-            .setAssetsSmallText(config.settings.game.smallimagetext ? config.settings.game.smallimagetext : undefined)
-            .setDetails(config.settings.game.details ? config.settings.game.details : undefined)
-            .setState(config.settings.game.state ? config.settings.game.state : undefined)
-            .setStartTimestamp(config.settings.game.startTimestamp ? config.settings.game.startTimestamp : undefined)
-            .setEndTimestamp(config.settings.game.endTimestamp ? config.settings.game.endTimestamp : undefined);
+            .setType('PLAYING')
+            .setName(config.settings.game.name)
+
+            .setDetails(config.settings.game.details)
+            .setState(config.settings.game.state)
+
+            .setAssetsLargeImage(image.id)
+            .setAssetsLargeText(config.settings.game.largeImageText ? config.settings.game.largeText : image.name)
+
+            .setAssetsSmallImage(config.settings.game.smallImage ? config.settings.game.smallImage : undefined)
+            .setAssetsSmallText(config.settings.game.smallImageText ? config.settings.game.smallImageText : undefined)
+
+            .setStartTimestamp(config.settings.game.startTimestamp)
+            .setEndTimestamp(config.settings.game.endTimestamp);
 
           // Set the presence
           client.user.setPresence(presence.toDiscord());
@@ -41,15 +41,12 @@ if (config.mode === 'game') {
       }
 
       // Done !
-      console.log(chalk.hex('#800080')('Spotify RPC enabled successfully!'));
-      console.log(chalk.hex('#800080')('Spotify: ' + config.settings.spotify.details));
-      console.log(chalk.hex('#800080')('Status: ' + config.status ? config.status : 'status not defined'));
-
-
+      console.log(chalk.hex('#800080')('Game RPC enabled successfully!'));
+      console.log(chalk.hex('#800080')('Game: ' + config.settings.game.name));
+      console.log(chalk.hex('#800080')('Status: ' + config.status));
 
     } catch (err) {
       console.log(err);
-      console.log(chalk.hex('#800080')('Discord RPC failed to enable!'));
     }
   });
 }

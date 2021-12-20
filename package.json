@@ -9,7 +9,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "eslint": "^8.3.0"
+    "eslint": "^8.5.0"
   },
   "name": "discord-selfbot-rpc",
   "version": "1.0.0",
