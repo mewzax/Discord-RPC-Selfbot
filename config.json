@@ -8,7 +8,8 @@
             "applicationID": "",
             "state": "",
             "details": "",
-            "largeImageKey": ""
+            "largeImageKey": "",
+            "startTimestamp": ""
         },
         "twitch": {
             "name": "",
@@ -16,13 +17,15 @@
             "url": "",
             "state": "",
             "details": "",
-            "largeImageKey": ""
+            "largeImageKey": "",
+            "startTimestamp": ""
         },
         "spotify": {
             "name": "",
             "details": "",
             "largeImageKey": "",
-            "largeImageText": ""
+            "largeImageText": "",
+            "startTimestamp": ""
         }
     }
 }
