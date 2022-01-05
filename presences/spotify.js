@@ -10,7 +10,8 @@ if (config.mode === 'spotify') {
         .setState(config.settings.spotify.details)
         .setDetails(config.settings.spotify.name)
         .setAssetsLargeImage(config.settings.largeImageKey)
-        .setAssetsLargeText(config.settings.spotify.largeImageText);
+        .setAssetsLargeText(config.settings.spotify.largeImageText)
+        .setStartTimestamp(config.settings.spotify.startTimestamp || Date.now());
 
       client.user.setPresence(presence.toDiscord());
 

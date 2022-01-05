@@ -14,7 +14,8 @@ if (config.mode === 'twitch') {
         .setState(config.settings.twitch.state)
         .setDetails(config.settings.twitch.details)
         .setAssetsLargeImage(image.settings.twitch.id)
-        .setAssetsLargeText(image.settings.twitch.name);
+        .setAssetsLargeText(image.settings.twitch.name)
+        .setStartTimestamp(config.settings.twitch.startTimestamp || Date.now());
       client.user.setPresence(presence.toDiscord());
     });
 

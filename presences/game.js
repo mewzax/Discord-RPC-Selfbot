@@ -13,7 +13,8 @@ if (config.mode === 'game') {
         .setState(config.settings.game.state)
         .setDetails(config.settings.game.details)
         .setAssetsLargeImage(image.id)
-        .setAssetsLargeText(image.name);
+        .setAssetsLargeText(image.name)
+        .setStartTimestamp(config.settings.game.startTimestamp || Date.now());
       client.user.setPresence(presence.toDiscord());
     });
     // Set the status
