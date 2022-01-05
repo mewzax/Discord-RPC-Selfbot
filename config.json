@@ -9,6 +9,7 @@
             "state": "",
             "details": "",
             "largeImageKey": "",
+            "largeImageText": "",
             "startTimestamp": ""
         },
         "twitch": {
@@ -18,6 +19,7 @@
             "state": "",
             "details": "",
             "largeImageKey": "",
+            "largeImageText": "",
             "startTimestamp": ""
         },
         "spotify": {
