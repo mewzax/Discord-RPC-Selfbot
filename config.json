@@ -10,7 +10,8 @@
             "details": "",
             "largeImageKey": "",
             "largeImageText": "",
-            "startTimestamp": ""
+            "startTimestamp": "",
+            "endTimestamp": ""
         },
         "twitch": {
             "name": "",
@@ -20,14 +21,16 @@
             "details": "",
             "largeImageKey": "",
             "largeImageText": "",
-            "startTimestamp": ""
+            "startTimestamp": "",
+            "endTimestamp": ""
         },
         "spotify": {
             "name": "",
             "details": "",
             "largeImageKey": "",
             "largeImageText": "",
-            "startTimestamp": ""
+            "startTimestamp": "",
+            "endTimestamp": ""
         }
     }
 }
