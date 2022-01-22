@@ -19,11 +19,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slowwdev/Discord-Selfbot-RPC.git"
+    "url": "git+https://github.com/Mewzax/Discord-Selfbot-RPC.git"
   },
   "bugs": {
-    "url": "https://github.com/slowwdev/Discord-Selfbot-RPC/issues"
+    "url": "https://github.com/Mewzax/Discord-Selfbot-RPC/issues"
   },
-  "homepage": "https://github.com/slowwdev/Discord-Selfbot-RPC#readme",
+  "homepage": "https://github.com/Mewzax/Discord-Selfbot-RPC#readme",
   "description": ""
 }
