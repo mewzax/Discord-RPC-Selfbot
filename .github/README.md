@@ -1,9 +1,9 @@
-<h1 align="center">Discord-Selfbot-RPC</h1>
+<h1 align="center">Discord-RPC-Selfbot</h1>
 
 <p align="center">
-  <a href="https://github.com/Mewzax/Discord-Selfbot-RPC"><img src="https://img.shields.io/github/last-commit/Mewzax/Discord-Selfbot-RPC?style=flat" /></a>
-  <a href="https://github.com/Mewzax/Discord-Selfbot-RPC/stargazers"><img src="https://img.shields.io/github/stars/Mewzax/Discord-Selfbot-RPC?style=flat" /></a>
-  <a href="https://github.com/Mewzax/Discord-Selfbot-RPC"><img src="https://visitor-badge.laobi.icu/badge?page_id=Mewzax.Discord-Selfbot-RPC" /></a>
+  <a href="https://github.com/Mewzax/Discord-RPC-Selfbot/"><img src="https://img.shields.io/github/last-commit/Mewzax/Discord-Selfbot-RPC?style=flat" /></a>
+  <a href="https://github.com/Mewzax/Discord-RPC-Selfbot/stargazers"><img src="https://img.shields.io/github/stars/Mewzax/Discord-Selfbot-RPC?style=flat" /></a>
+  <a href="https://github.com/Mewzax/Discord-RPC-Selfbot/"><img src="https://visitor-badge.laobi.icu/badge?page_id=Mewzax.Discord-Selfbot-RPC" /></a>
  
   <br>
   <b>The most efficient Discord RPC you'll ever find.</b><br>
@@ -28,10 +28,6 @@
 - Game RPC
 - Twitch RPC
 - Custom Status: online, dnd, idle
-
-### Requirements
-- [NodeJS](https://nodejs.org/en/download/)
-- [Discord Developer Application](https://discord.com/developers/applications)
 
 ### FAQ
 - **Q: Where can I find the installation steps?**
