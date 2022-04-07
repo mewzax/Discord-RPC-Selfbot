@@ -11,7 +11,6 @@
   <br>
   If you liked this project, please consider <b>starring</b> it <3
 </p>
-<h4 align="center">Join <a href="https://discord.gg/3sNjV5GJat">Discord Server</a> for help</h4>
 
 ---
 
