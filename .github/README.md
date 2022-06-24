@@ -7,7 +7,7 @@
  
   <br>
   <b>The most efficient Discord RPC you'll ever find.</b><br>
-  Made with ❤ by <b><a href="https://github.com/Mewzax">slow</a></b>
+  Made with ❤ by <b><a href="https://github.com/Mewzax">Mewzax</a></b>
   <br>
   If you liked this project, please consider <b>starring</b> it <3
 </p>
