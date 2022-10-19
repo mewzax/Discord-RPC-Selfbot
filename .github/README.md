@@ -1,3 +1,6 @@
+> Does not work anymore, will be updated
+
+
 <h1 align="center">Discord-RPC-Selfbot</h1>
 
 <p align="center">
