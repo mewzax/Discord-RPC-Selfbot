@@ -18,6 +18,10 @@
 
  because it don't need to have Discord running in background / Free Hosting on replit.com 24h/7 and have more features
 
+![image](https://user-images.githubusercontent.com/75091300/199565539-111d4043-23ae-47e9-aa4f-671e71635167.png)
+
+
+
 ### Features:
 
 - Spotify RPC
@@ -26,6 +30,9 @@
 - Custom Status: online, dnd, idle
 
 ### FAQ
+
+![image](https://user-images.githubusercontent.com/75091300/199565394-1577deab-8035-4d7b-b02e-d863e6638e3f.png)
+
 - **Q: Where can I find the installation steps?**
 - A: [Installation](https://github.com/Mewzax/Discord-Selfbot-RPC/wiki/Installation)
 
