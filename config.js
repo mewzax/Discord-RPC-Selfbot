@@ -14,9 +14,9 @@ module.exports = {
         "state": "", // row below first row
 
         "largeImageKey": "", // Large Image
-        "largeImageText": "", // Small Image
+        "largeImageText": "", // the text when img surrounded (default is largeimage name in dev portal)
 
-        "smallImageKey": "",
+        "smallImageKey": "", // Small Image
         "smallImageText": "",
         
         // Date.now() Epoch timestamps
@@ -30,8 +30,8 @@ module.exports = {
         "details": "", // title
         "state": "", // first row below title (playing ...)
 
-        "largeImageKey": "",
-        "largeImageText": "", // will also be second row below title
+        "largeImageKey": "", // in dev portal, upload img then name it with the name you want to appear with image is surrounded
+        "largeImageText": "", // use this to replace text when img surrounded it will also be second row below title, if you dont want the row dont use it and setup text via dev portal (img name)
         
         "smallImageKey": "",
         "smallImageText": "",
