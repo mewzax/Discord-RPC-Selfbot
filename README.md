@@ -16,7 +16,7 @@
 
  ### Why is Discord-Selfbot-RPC better than other Discord RPC ?
 
- because it don't need to have Discord running in background / Free Hosting on replit.com 24h/7 / more features
+Because it doesn't require Discord to be running in the background, has free hosting on replit.com 24/7, and has more features.
 
 ![image](https://user-images.githubusercontent.com/75091300/199565539-111d4043-23ae-47e9-aa4f-671e71635167.png)
 
