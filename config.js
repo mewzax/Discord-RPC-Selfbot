@@ -4,9 +4,9 @@ module.exports = {
     // discord bot token
     "token": "",
     // spotify/game/twitch
-    "mode": "game", 
+    "mode": "", 
     // dnd/online/idle
-    "status": "dnd",
+    "status": "",
 
     "game": {
         "applicationID": "",
