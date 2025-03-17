@@ -1,10 +1,12 @@
 // to understand how to use app id and image keys, follow https://github.com/slowwdev/Discord-Selfbot-RPC/wiki/Installation
 
 module.exports = {
+    // discord bot token
+    "token": "",
     // spotify/game/twitch
-    "mode": "", 
+    "mode": "game", 
     // dnd/online/idle
-    "status": "",
+    "status": "dnd",
 
     "game": {
         "applicationID": "",
